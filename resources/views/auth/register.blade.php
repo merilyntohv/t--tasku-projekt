@@ -12,21 +12,21 @@
         <!-- Email Address -->
         <div class="mt-4">
             <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
+            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="name" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
         <!-- description -->
         <div>
             <x-input-label for="description" :value="__('Valdkond')" />
-            <x-text-input id="description" class="block mt-1 w-full" type="text" name="description" :value="old('description')" required autofocus autocomplete="username" />
+            <x-text-input id="description" class="block mt-1 w-full" type="text" name="description" :value="old('description')" required autofocus autocomplete="name" />
             <x-input-error :messages="$errors->get('description')" class="mt-2" />
         </div>
 
         <!-- state -->
         <div>
             <x-input-label for="state" :value="__('Maakond')" />
-            <x-text-input id="state" class="block mt-1 w-full" type="text" name="state" :value="old('state')" required autofocus autocomplete="username" />
+            <x-text-input id="state" class="block mt-1 w-full" type="text" name="state" :value="old('state')" required autofocus autocomplete="name" />
             <x-input-error :messages="$errors->get('state')" class="mt-2" />
         </div>
 
