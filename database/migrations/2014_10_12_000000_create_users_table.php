@@ -19,6 +19,10 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->string('description');
+            $table->string('state');
+            $table->string('tel_nr');
+
         });
     }
 

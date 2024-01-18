@@ -4,7 +4,7 @@
 
         <!-- Name -->
         <div>
-            <x-input-label for="name" :value="__('Name')" />
+            <x-input-label for="name" :value="__('Nimi')" />
             <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
@@ -14,6 +14,27 @@
             <x-input-label for="email" :value="__('Email')" />
             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        </div>
+
+        <!-- description -->
+        <div>
+            <x-input-label for="description" :value="__('Valdkond')" />
+            <x-text-input id="description" class="block mt-1 w-full" type="text" name="description" :value="old('description')" required autofocus autocomplete="username" />
+            <x-input-error :messages="$errors->get('description')" class="mt-2" />
+        </div>
+
+        <!-- state -->
+        <div>
+            <x-input-label for="state" :value="__('Maakond')" />
+            <x-text-input id="state" class="block mt-1 w-full" type="text" name="state" :value="old('state')" required autofocus autocomplete="username" />
+            <x-input-error :messages="$errors->get('state')" class="mt-2" />
+        </div>
+
+        <!-- tel_nr -->
+        <div>
+            <x-input-label for="tel_nr" :value="__('Telefoni number')" />
+            <x-text-input id="tel_nr" class="block mt-1 w-full" type="text" name="tel_nr" :value="old('tel_nr')" required autofocus autocomplete="name" />
+            <x-input-error :messages="$errors->get('tel_nr')" class="mt-2" />
         </div>
 
         <!-- Password -->
