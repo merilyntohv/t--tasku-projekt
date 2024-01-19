@@ -138,10 +138,11 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua.
                         </p>
-                        <button
+                        <a
+                            href="{{ route('sos') }}"
                             class="btn-default overflow-hidden relative w-64 bg-[#102E4A] text-white py-4 px-4 rounded-xl font-bold uppercase transition-all duration-100 -- hover:shadow-md border border-stone-100 hover:bg-gradient-to-t hover:from-stone-100 before:to-stone-50 hover:-translate-y-[3px]">
                             <span class="relative">SOS teenusepakkujad</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
