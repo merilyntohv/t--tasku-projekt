@@ -70,7 +70,7 @@
                     class="w-full bg-gradient-to-r from-[#fed132] to-[#eeaa10] text-[#102E4A] py-2 px-4 rounded-full font-bold uppercase border-black ">
                     <span class="relative">Otsi</span>
                 </button>
-            </form
+            </form>
         </div>
     </div>
 
