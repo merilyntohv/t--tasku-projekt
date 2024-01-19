@@ -7,10 +7,10 @@
     @foreach ($companies as $company)
         <div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-xl mt-2">
             <ul>
-                <li>{{ $company->name }}</></li>
-                <li>{{ $company->email }}</li>
-                <li>{{ $company->tel_nr }}</li>
-                <li>{{ $company->description }}</li>
+                <li>Ettevõtte nimi:  {{ $company->name }}</li>
+                <li>Email:  {{ $company->email }}</li>
+                <li>Tel. nr:  {{ $company->tel_nr }}</li>
+                <li>Valdkond:  {{ $company->description }}</li>
             </ul>
         </div>
     @endforeach
