@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Company;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use Illuminate\Http\RedirectResponse;
 
-class BookController extends Controller
+class CompanyController extends Controller
 {
-    public function index()
+    public function show()
     {
         return view("sos", [
-            "company" => Company::paginate(20),
+            "companies" => User::all(),
         ]);
     }
 }

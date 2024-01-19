@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\CompanyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,8 +30,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/sos', function () {
-    return view('sos');
-})->name('sos');
+Route::get('/sos', [CompanyController::class, 'show'])->name('sos');
 
 require __DIR__.'/auth.php';
